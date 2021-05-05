@@ -7,3 +7,6 @@ firebase_in=firebase.FirebaseApplication("https://credit-card-fraud-flask-defaul
 def home():
     result=firebase_in.get("/Restaraunts",None)
     return str(result)
+
+if __name__ =="__main__":
+    app.run()
